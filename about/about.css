@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+  }
+/*navigation*/
+nav{
+    background: #282e34;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+
+  }
+  label.logo{
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    font-weight: bold;
+  }
+  nav{
+    z-index: 20;
+  }
+  nav ul{
+    float: right;
+    margin-right: 12px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 15px;
+    padding: 7px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  nav ul li a.active,nav ul li  a:hover{
+    background: #fffefe;
+    transition: .5s;
+    color: #000;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+
+  .container{
+    max-width: 1170px;
+    margin: auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  /*footer*/
+  .footer{
+    background-color: #24262b;
+    padding: 70px 0;
+  
+  }
+  .footer-col{
+    width: 25%;
+    padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  
+  }
+  .footer-col ul li{
+    color: #bbbbbb;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: white;
+  }

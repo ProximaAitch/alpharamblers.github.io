@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  /*navbar*/
+  nav{
+    background: #282e34;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+
+  }
+  label.logo{
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    font-weight: bold;
+  }
+  nav{
+    z-index: 20;
+  }
+  nav ul{
+    float: right;
+    margin-right: 12px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  nav ul li a{
+    color: rgb(252, 252, 252);
+    font-size: 15px;
+    padding: 7px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  nav ul li a.active{
+    background: #005c5f;
+    transition: .5s;
+    color: rgb(226, 226, 226);
+  }
+  nav ul li  a:hover{
+    background: #eeeeee;
+    transition: .5s;
+    color: #000;
+  }
+  nav ul li  a.active:hover{
+    background: #7c0000;
+    transition: .5s;
+    color: rgb(248, 242, 242);
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  /*background*/
+  .banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/pexels-guduru-ajay-bhargav-1076081.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 50px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 15px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border: 2px solid #009688;
+    border-radius: 25px;
+    font-weight: bold;
+    background:transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button span{
+    background:#009688;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+
+/*comments section*/
+#testimonials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(134, 133, 133);
+  width: 100%;
+}
+.testimonial-heading{
+  letter-spacing: 1px;
+  margin: 30px 0;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-heading h1{
+  font-size: 2.2rem;
+  font-weight: 500;
+  background-color: #202020;
+  color: white;
+  padding: 10px 20px;
+}
+
+.testimonial-heading span{
+  font-size: 1.3rem;
+  color: #252525;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.testimonial-box-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: rgb(224, 222, 222);
+}
+.testimonial-box{
+  width: 500px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+  background-color: rgb(240, 240, 240);
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+.profile-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.profile-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile{
+  display: flex;
+  align-items: center;
+}
+.name-user{
+  display: flex;
+  flex-direction: column;
+}
+.name-user strong{
+  color: #3d3d3d;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.name-user span{
+  color: #979797;
+  font-size: 0.8rem;
+}
+.reviews{
+  color: rgb(11, 4, 75);
+}
+.box-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.client-comment p{
+  font-size: 0.9rem;
+  color: #4b4b4b
+}
+.testimonial-box:hover{
+  transform: translateY(-10px);
+  transition: all ease 0.3s;
+}
+
+
+/*body*/
+
+.pimg1, .pimg2, .pimg3{
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.pimg1{
+  background-image: url(/images/Soueix-Rogalle-St-Sernin\ -\ 13-03-2018\ -\ 27.jpeg);
+  min-height: 600px;
+}
+
+.pimg2{
+  background-image: url(/images/76c14cf2caa843cee69092233dc1149e-1280x853.jpg);
+  min-height: 600px;
+}
+
+.pimg3{
+  background-image: url(/images/bhootz-fullwidth.jpg);
+  min-height: 600px;
+}
+.section h2, p{
+  font-size: 30px;
+}
+.section h2 a{
+  color: #0082e6;
+}
+.section{
+  text-align: center;
+  padding: 30px 80px;
+}
+
+.section-light{
+  background-color: #f4f4f4;
+  color: #282e34;
+}
+
+.section-dark{
+  background-color: #282e34;
+  color: #ddd;
+}
+.explore{
+text-align: center;
+padding: 30px;
+}
+.exp a{
+  font-size: 20px;
+  padding: 15px;
+  background-color: #282e34;
+  color: #ddd;
+  border-radius: 5px;
+}
+.exp a:hover{
+  color: #282e34;
+  background-color: #ddd;
+  transition: .3s;
+}
+
+.ptext{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.ptext .border{
+  background-color: #111;
+  color: #fff;
+  padding: 10px;
+}
+
+.ptext .border.trans{
+  background-color: transparent;
+}
+/*footer*/
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: noe;
+}
+.footer{
+  background-color: #24262b;
+  padding: 70px 0;
+
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+
+}
+.footer-col ul li{
+  color: #bbbbbb;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 10px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin-right: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: white;
+}
+
+/*Responsiveness*/
+@media(max-width:767px){
+  label.logo{
+    font-size: 20px;
+    padding-left: 30px;
+  }
+  .section h2, p{
+    font-size: 20px;
+  }
+    .pimg1, .pimg2,.pimg3{
+      background-attachment: scroll;
+  }
+  .checkbtn{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  a:hover,a.active{
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width:574px){
+  .content h1{
+    font-size: 35px;
+    margin-top: 60px;
+    transition: 0.5s;
+}
+  .content p{
+    margin: 25px 30px;
+  }
+  .section h2, p{
+    font-size: 15px;
+  }
+  .text {
+    font-size: 12px;
+}
+label.logo{
+  font-size: 15px;
+  padding-left: 20px;
+}
+  .footer-col{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
+  
